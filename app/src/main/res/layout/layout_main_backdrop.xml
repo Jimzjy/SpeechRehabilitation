@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_backdrop_single_word_test"
+        style="@style/Widget.SR.Button.TextButtonBackdrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?android:attr/textColorPrimary"
+        android:text="@string/single_word_test"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_backdrop_words_test"
+        style="@style/Widget.SR.Button.TextButtonBackdrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/words_test"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_backdrop_custom"
+        style="@style/Widget.SR.Button.TextButtonBackdrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/custom"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_backdrop_user"
+        style="@style/Widget.SR.Button.TextButtonBackdrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user_format"/>
+</merge>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LineChart">
+        <attr name="YUnit" format="string"/>
+        <attr name="XUnit" format="string"/>
+        <attr name="outLineColor" format="color"/>
+        <attr name="outLineTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="Playing">
+        <attr name="lineColor" format="color"/>
+        <attr name="pointColor" format="color"/>
+        <attr name="pointActiveColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="LatticePad">
+        <attr name="lattice_pointColor" format="color"/>
+        <attr name="strokeColor" format="color"/>
+        <attr name="xPointCount" format="integer"/>
+        <attr name="yPointCount" format="integer"/>
+        <attr name="displayMode" format="boolean"/>
+    </declare-styleable>
+</resources>

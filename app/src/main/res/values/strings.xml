@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Speech Rehabilitation</string>
+
+    <string name="single_word_test">Single Word Test</string>
+    <string name="words_test">Words Test</string>
+    <string name="history">History</string>
+    <string name="date">Date</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="from_recording">From Recording</string>
+    <string name="switch_user">Switch User</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+    <string name="setting">Setting</string>
+    <string name="test_again">Test Again</string>
+    <string name="username">Username</string>
+    <string name="select_user">Select User</string>
+    <string name="create">Create</string>
+    <string name="custom">Custom</string>
+    <string name="select_words">Select Words</string>
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
+    <string name="search">Search</string>
+
+    <string name="user_format">User:&#160;&#160;%s</string>
+    <string name="accuracy">Accuracy %</string>
+    <string name="week_format">Last %d Week</string>
+
+    <string name="hello">你好</string>
+    <string name="waiting_for_init">Waiting for initialization&#8230;</string>
+    <string name="init_successful">Initialization Successful, you can click the \n\n\"你好\"\n\n button below to adjust your volume, if still have problem, click the setting button below to set your tts engine\'s main language to Chinese, and if you are ready, click the start button to start the test</string>
+    <string name="tts_init_failed">Initialization Failed, your TTS engine is not support chinese, you can click the link here to download the Google TTS Engine\n\nhttps://www.coolapk.com/apk/com.google.android.tts</string>
+    <string name="data_init_failed">Initialization Failed, there are some data problem in this app, if you see this not the first time, please reinstall the app</string>
+    <string name="need_select">You need to select a choice</string>
+    <string name="test_finished">Good! You have finished the test, and your accuracy is</string>
+    <string name="select_user_from_below">Please select from these below</string>
+    <string name="user_exists">User already exists</string>
+    <string name="username_empty">Username cannot be empty</string>
+    <string name="sr_appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="not_select_words">Please select a word</string>
+    <string name="save_successful">Save Successful</string>
+    <string name="single_word_test_hint">Start the single word test, each choice is a single word</string>
+    <string name="words_test_hint">Start the words test, each choice is a word with a custom lattice picture</string>
+    <string name="custom_hint">Custom your own word lattice picture, like this below</string>
+</resources>

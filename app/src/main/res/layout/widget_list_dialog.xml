@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/dialog_width"
+    android:maxHeight="@dimen/dialog_height"
+    android:orientation="vertical"
+    android:background="@drawable/corner_white">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/widget_list_dialog_search_til"
+        style="@style/Widget.SR.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/widget_list_dialog_search_et"
+            style="@style/Widget.SR.TextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/search"
+            android:inputType="text"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/widget_list_dialog_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        tools:itemCount="3"
+        tools:listitem="@layout/widget_list_dialog_item" />
+</LinearLayout>

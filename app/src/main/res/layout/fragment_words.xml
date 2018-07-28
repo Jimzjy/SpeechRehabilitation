@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".ui.words.WordsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/words_cl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/words_play_hint_card"
+            style="@style/Widget.SR.CardView"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.jimzjy.speechrehabilitation.common.widget.Playing
+                android:id="@+id/words_play_hint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ripple_chip_grey"
+                android:padding="8dp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/words_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/words_play_hint_card"
+            app:layout_constraintStart_toEndOf="@+id/words_play_hint_card"
+            app:layout_constraintTop_toTopOf="@+id/words_play_hint_card"
+            tools:text="0 / 25" />
+
+        <TextView
+            android:id="@+id/words_score_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="@+id/words_play_hint_card"
+            app:layout_constraintEnd_toStartOf="@+id/words_play_hint_card"
+            app:layout_constraintTop_toTopOf="@+id/words_play_hint_card"
+            tools:text="0" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/words_choice_card"
+            style="@style/Widget.SR.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/words_play_hint_card">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/words_choice_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:itemCount="1"
+                tools:listitem="@layout/item_words_choice_rv" />
+
+            <LinearLayout
+                android:id="@+id/words_choice_result_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/sr_white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/words_score_tv">
+
+                <ImageView
+                    android:id="@+id/words_choice_result_iv"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:padding="8dp"
+                    tools:ignore="contentDescription"
+                    tools:src="@drawable/vector_check" />
+
+                <TextView
+                    android:id="@+id/words_choice_result_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:visibility="invisible"
+                    tools:text="123" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.SR.CardView"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            app:cardCornerRadius="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/words_choice_card">
+
+            <ImageView
+                android:id="@+id/words_next_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ripple_chip_grey"
+                android:contentDescription="@string/next"
+                android:padding="8dp"
+                android:src="@drawable/vector_forward" />
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include android:id="@+id/words_tts_layout"
+        layout="@layout/layout_tts_hint"
+        android:visibility="invisible"/>
+
+    <include android:id="@+id/words_result_layout"
+        layout="@layout/layout_result"
+        android:visibility="invisible"/>
+</FrameLayout>

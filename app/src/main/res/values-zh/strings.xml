@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">言语康复</string>
+    <string name="single_word_test">单字训练</string>
+    <string name="words_test">词语训练</string>
+    <string name="history">历史纪录</string>
+    <string name="date">日期</string>
+    <string name="week">周</string>
+    <string name="month">月</string>
+    <string name="from_recording">与第一次对比</string>
+    <string name="switch_user">切换用户</string>
+    <string name="next">下一个</string>
+    <string name="start">开始</string>
+    <string name="setting">设置</string>
+    <string name="test_again">再次训练</string>
+    <string name="username">用户名</string>
+    <string name="select_user">选择用户</string>
+    <string name="create">创建</string>
+    <string name="custom">自定义</string>
+    <string name="select_words">选择词语</string>
+    <string name="back">回退</string>
+    <string name="save">保存</string>
+    <string name="clear">清楚</string>
+    <string name="add">添加</string>
+    <string name="search">搜索</string>
+    <string name="remove">去除</string>
+    <string name="user_format">用户:&#160;&#160;%s</string>
+    <string name="accuracy">准确率 %</string>
+    <string name="week_format">上 %d 周</string>
+    <string name="hello">你好</string>
+    <string name="waiting_for_init">等待初始化完成&#8230;</string>
+    <string name="init_successful">初始化成功, 你可以点击下面的\n\n你好\n\n按钮来测试声音调整音量, 如果没有音量调到最大也没有声音, 点击 设置 按钮来设置您的 TTS 引擎的主语言为中文, 如果你准备好了, 点击下面的 开始 按钮开始训练\n</string>
+    <string name="tts_init_failed">初始化失败, 您的 TTS 引擎不支持中文, 你可以点击下面的链接下载 Google TTS 引擎\n\nhttps://www.coolapk.com/apk/com.google.android.tts</string>
+    <string name="data_init_failed">初始化失败, 遇到数据问题, 如果这不是您第一次看到这个信息, 请重新安装此应用</string>
+    <string name="need_select">请选择一个选项</string>
+    <string name="test_finished">非常好, 我们已经完成了此次训练, 您的准确率是</string>
+    <string name="select_user_from_below">从下方选择</string>
+    <string name="user_exists">用户已存在</string>
+    <string name="username_empty">用户名不能为空</string>
+    <string name="not_select_words">请选择一个词</string>
+    <string name="save_successful">保存成功</string>
+    <string name="single_word_test_hint">开始一个单字训练, 每个选项都是单个字</string>
+    <string name="words_test_hint">开始一个词语训练, 每个选项都是一个词语配上自定义点阵图</string>
+    <string name="custom_hint">自定义词语点阵图, 就像下面这样</string>
+</resources>

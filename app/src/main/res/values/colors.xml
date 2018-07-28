@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4BC7E7</color>
+    <color name="colorPrimaryDark">#2EAECC</color>
+    <color name="colorAccent">#4BC7E7</color>
+    <color name="colorPrimaryLight">#8BDFF5</color>
+    <color name="textColorPrimary">#002939</color>
+
+    <color name="iconColor">#002939</color>
+    <color name="outLineColor">#99002939</color>
+    <color name="outLineTextColor">#002939</color>
+    <color name="sr_white">#FAFAFA</color>
+    <color name="sr_chip_grey">#AAE0E0E0</color>
+    <color name="sr_red">#F06292</color>
+    <color name="sr_background">#F5F5F5</color>
+</resources>

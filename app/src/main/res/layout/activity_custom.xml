@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorPrimary"
+    tools:context=".ui.custom.CustomActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/custom_toolbar"
+        style="@style/Widget.SR.Toolbar"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/vector_back"
+        app:title="@string/custom"
+        android:layout_height="@dimen/action_bar_height" />
+
+    <FrameLayout
+        android:id="@+id/custom_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sr_white"/>
+</LinearLayout>
