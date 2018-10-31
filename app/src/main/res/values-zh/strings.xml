@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">言语康复</string>
+    <string name="app_name">听力康复检测</string>
     <string name="single_word_test">单字训练</string>
     <string name="words_test">词语训练</string>
     <string name="history">历史纪录</string>
